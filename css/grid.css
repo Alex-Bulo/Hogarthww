@@ -1,0 +1,30 @@
+/* IE10+ */ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none),
+/* IE6,7,9,10 */ screen and (min-width: 640px), screen\9, /* IE6,7 */ screen\9, 
+/* IE8 */ \0screen, /* IE9,10 */ screen and (min-width: 0\0),
+/* CHROME, SAFARI, EDGE, FIREFOX */ screen and (-webkit-min-device-pixel-ratio:0) {
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-photo-two-third {
+  width: 66%;
+}
+.gallery-photo-third {
+  width: 34%;
+}
+.gallery-photo-half {
+  width: 50%;
+}
+@media only screen and (max-width: 735px) {
+  .gallery-container {
+    flex-direction: column;
+  }
+  .gallery-photo-two-third,
+  .gallery-photo-third,
+  .gallery-photo-half {
+    width: 100%;
+  }
+}
+
+}
